@@ -1,6 +1,8 @@
 :root {
   --lwt-background-tab-separator-color: transparent;
+ 
 }
+
 
 #navigator-toolbox{
   --tabs-border-color: rgba(0,0,0,0) !important; 
@@ -8,11 +10,15 @@
 
 #titlebar #TabsToolbar {
 	padding: 8px 0px 8px 6px !important;
-	background-color: rgba(159, 206, 252, 0.9) !important;
+	/*background-color: rgba(159, 206, 252, 0.9) !important;*/
+}
+#toolbar-menubar, #TabsToolbar {
+  
+
 }
 
 .tabbrowser-tab > .tab-stack > .tab-background {
-	border-radius: 50px !important;
+	border-radius: 10px !important;
 }
 .tab-line {
   height: 0px !important;
@@ -24,8 +30,8 @@
 }
 
 .tab-background-inner{
-  background-color: rgba(159, 206, 252, 0.7);
-  border-radius: 50px;
+  border-radius: 10px;
+  border: .2px solid black;
 }
 
 #TabsToolbar{--lwt-toolbarbutton-icon-fill:  rgba(88, 153, 218, 1)}
@@ -46,7 +52,13 @@ toolbar #tabs-newtab-button:not([disabled="true"]):not([checked]):not([open]):no
 toolbar #tabs-newtab-button:not([disabled="true"]):-moz-any([open], [checked], :hover:active) > .toolbarbutton-icon,
 toolbar #tabs-newtab-button:not([disabled="true"]):-moz-any([open], [checked], :active) > .toolbarbutton-icon {
 	transition: all 0.3s ease !important;
-	fill: rgba(var(--main-bgcolor), 1) !important;
-	border-radius: 30px !important;
-	background-color: rgba(77, 167, 226, 0.5) !important;
+  fill: black !important;
+  stroke-width: .2px;
+  border-radius: 30px !important;
+  border: .2px solid black;
+}
+
+toolbar#nav-bar {
+	box-shadow: none !important;
+	padding-bottom: 4px !important;
 }
