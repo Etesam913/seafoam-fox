@@ -1,6 +1,12 @@
 :root {
   --lwt-background-tab-separator-color: transparent;
- 
+  --toolbarbutton-border-radius: 15px !important;
+  /*Tab text Color*/
+  --lwt-text-color: rgb(55, 55, 55) !important;
+  /*Urlbar text color*/
+  --lwt-toolbar-field-color: rgb(55, 55, 55) !important;
+  /*Urlbar text color when focused*/
+  --lwt-toolbar-field-focus-color: black !important;
 }
 
 
@@ -13,7 +19,7 @@
 	/*background-color: rgba(159, 206, 252, 0.9) !important;*/
 }
 #toolbar-menubar, #TabsToolbar {
-  
+  background: #5ae9b2 !important;
 
 }
 
@@ -31,8 +37,30 @@
 
 .tab-background-inner{
   border-radius: 10px;
-  border: .2px solid black;
+  background: #6ff7c3d8 !important;
+
 }
+
+#urlbar{
+  border-radius: 15px;
+  color: black;
+}
+
+/*Bookmarks Bar*/
+#PersonalToolbar{
+  background: #6ff7c3d8 !important;
+}
+
+#urlbar-results {
+  background:#5bf3b9d8 !important;
+}
+
+
+#urlbar > #urlbar-background {
+  border: none !important;
+  box-shadow: none !important;
+  background: #5bf3b9d8 !important;
+}  
 
 #TabsToolbar{--lwt-toolbarbutton-icon-fill:  rgba(88, 153, 218, 1)}
 
@@ -47,6 +75,14 @@
 	
 }
 
+#urlbar[breakout-extend]{top:calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2)!important;left:calc((var(--urlbar-toolbar-width) - var(--urlbar-width)) / 2)!important;width:100%!important}
+
+#urlbar[breakout-extend] #urlbar-input-container{height:calc(var(--tab-min-height) - 3px)!important;padding:0px!important}
+
+.urlbarView{margin:0px!important;width:100%!important}
+
+.urlbarView-row{padding:0px!important}
+
 
 toolbar #tabs-newtab-button:not([disabled="true"]):not([checked]):not([open]):not(:active) > .toolbarbutton-icon,
 toolbar #tabs-newtab-button:not([disabled="true"]):-moz-any([open], [checked], :hover:active) > .toolbarbutton-icon,
@@ -55,10 +91,10 @@ toolbar #tabs-newtab-button:not([disabled="true"]):-moz-any([open], [checked], :
   fill: black !important;
   stroke-width: .2px;
   border-radius: 30px !important;
-  border: .2px solid black;
 }
 
 toolbar#nav-bar {
 	box-shadow: none !important;
-	padding-bottom: 4px !important;
+  padding-bottom: 4px !important;
+  background: #5ae9b2 !important;
 }
