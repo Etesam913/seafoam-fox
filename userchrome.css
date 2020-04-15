@@ -35,6 +35,10 @@
   margin-left: 2.5px !important;
 }
 
+.titlebar-spacer[type="pre-tabs"], .titlebar-spacer[type="post-tabs"]{
+  width: 65px !important;
+}
+
 .tab-background-inner{
   border-radius: 10px;
   background: #6ff7c3d8 !important;
